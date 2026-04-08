@@ -1,0 +1,732 @@
+<html lang="en" class="scroll-smooth"><head>
+<script>
+try{if(window.parent&&window.parent!==window){window.parent.promotekit_referral="1fd2949a-d22c-431b-92bf-02d4ad04ee24";window.parent.document.cookie="promotekit_referral=1fd2949a-d22c-431b-92bf-02d4ad04ee24;path=/;domain=.aura.build;max-age=31536000"}}catch(e){}
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anshul Roy - Full Stack AI Engineer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&amp;family=Inter:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+width: 4px;
+height: 4px;
+}
+::-webkit-scrollbar-track {
+background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+background: #44403c;
+border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #78716c;
+}
+/* Typography Override */
+body { font-family: 'Inter', sans-serif; font-weight: 300; }
+.font-display { font-family: 'Cinzel', serif; }
+/* Marquee Animation */
+@keyframes marquee {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+animation: marquee 40s linear infinite;
+}
+/* Horizontal Scroll Hide */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+/* Add grab cursor hint for horizontal scroll sections */
+#experience .hide-scrollbar,
+#skills .hide-scrollbar {
+    cursor: grab;
+}
+
+#experience .hide-scrollbar:active,
+#skills .hide-scrollbar:active {
+    cursor: grabbing;
+}
+/* Smooth Image Reveal */
+.group:hover .reveal-info {
+opacity: 1;
+transform: translateY(0);
+}
+iconify-icon {
+stroke-width: 1.5px;
+}
+</style></head>
+<body class="bg-[#0f0f0f] text-stone-300 antialiased selection:bg-orange-900/30 selection:text-orange-100 font-light">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 mix-blend-difference text-white py-6 px-6 md:px-12 flex justify-between items-center transition-all duration-300">
+        <a href="#" class="font-display text-xl tracking-tight font-medium">ANSHUL ROY</a>
+        
+        <div class="hidden md:flex gap-8 text-xs font-normal tracking-widest uppercase">
+            <a href="#projects" class="hover:opacity-50 transition-opacity">Projects</a>
+            <a href="#about" class="hover:opacity-50 transition-opacity">About</a>
+            <a href="#experience" class="hover:opacity-50 transition-opacity">Experience</a>
+            <a href="#skills" class="hover:opacity-50 transition-opacity">Skills</a>
+        </div>
+
+        <button class="flex items-center gap-2 group">
+            <span class="text-xs uppercase tracking-widest group-hover:opacity-50 transition-opacity">Menu</span>
+            <div class="space-y-1">
+                <span class="block w-4 h-[1px] bg-white group-hover:w-6 transition-all duration-300"></span>
+                <span class="block w-4 h-[1px] bg-white group-hover:w-2 transition-all duration-300 ml-auto"></span>
+            </div>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen w-full flex flex-col justify-between pt-32 pb-12 px-6 md:px-12 border-b border-white/5 overflow-hidden">
+        <!-- Background Ambient -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-stone-800/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-orange-900/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <div class="max-w-screen-2xl w-full mx-auto relative z-10 h-full flex flex-col justify-center">
+            <div class="space-y-8">
+                <div class="flex items-center gap-4 text-xs font-normal text-stone-500 uppercase tracking-[0.3em] animate-pulse">
+                    <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                    Open to SDE / AI Internships
+                </div>
+                <h1 class="font-display text-5xl md:text-7xl lg:text-9xl text-stone-100 leading-[0.9] tracking-tight">
+                    Full-Stack AI <br>
+                    <span class="text-stone-700">Engineer</span>, <br>
+                    <span class="italic font-serif text-stone-100">solving operational friction.</span>
+                </h1>
+                <div class="max-w-2xl mt-8">
+                    <p class="text-sm md:text-base text-stone-400 leading-relaxed font-light mb-8">
+                        Pre-final year CS (AI & ML) @ Atlas Skilltech University. From NASA competitions to AWS hackathons, I focus on AI that creates tangible, real-world value.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-6">
+                        <a href="#projects" class="text-xs uppercase tracking-widest text-stone-200 border-b border-stone-700 hover:border-stone-300 hover:text-white transition-all pb-1">View Projects</a>
+                        <a href="Anshul Roy Resume (2).pdf" download class="text-xs uppercase tracking-widest text-stone-200 border-b border-stone-700 hover:border-stone-300 hover:text-white transition-all pb-1">Download Resume</a>
+                        <a href="https://github.com/AnshulRoy28" target="_blank" class="text-xs uppercase tracking-widest text-stone-200 border-b border-stone-700 hover:border-stone-300 hover:text-white transition-all pb-1">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-screen-2xl w-full mx-auto flex justify-between items-end relative z-10 mt-12">
+            <p class="max-w-xs text-sm text-stone-500 leading-relaxed font-light">
+                Built production-grade systems for Amazon Nova Hackathon 2026 and NASA HERC 2025.
+            </p>
+            <div class="animate-bounce text-stone-600">
+                <iconify-icon icon="solar:arrow-down-linear" width="24" height="24"></iconify-icon>
+            </div>
+        </div>
+    </header>
+
+    <!-- Infinite Marquee -->
+    <div class="border-b border-white/5 py-4 overflow-hidden bg-[#0f0f0f]">
+        <div class="whitespace-nowrap animate-marquee flex items-center gap-16 text-stone-800 text-sm md:text-base font-display uppercase tracking-widest">
+            <span>Amazon Nova 2026</span> <span>NASA HERC 2025</span> <span>ECHO AI Browser</span> <span>Nudge AI 3rd Place</span> <span>GenAI Zurich 2026</span>
+            <span>Amazon Nova 2026</span> <span>NASA HERC 2025</span> <span>ECHO AI Browser</span> <span>Nudge AI 3rd Place</span> <span>GenAI Zurich 2026</span>
+            <span>Amazon Nova 2026</span> <span>NASA HERC 2025</span> <span>ECHO AI Browser</span> <span>Nudge AI 3rd Place</span> <span>GenAI Zurich 2026</span>
+        </div>
+    </div>
+
+    <!-- STICKY VERTICAL SCROLL: PORTFOLIO -->
+    <section id="projects" class="relative border-b border-white/5">
+        <div class="flex flex-col lg:flex-row">
+            
+            <!-- Sticky Sidebar -->
+            <div class="lg:w-1/3 lg:h-screen lg:sticky lg:top-0 p-6 md:p-12 flex flex-col justify-center border-r border-white/5 bg-[#0f0f0f] z-10">
+                <span class="text-xs text-orange-500 uppercase tracking-widest mb-6 block">Selected Works</span>
+                <h2 class="text-3xl md:text-5xl font-display text-white mb-6 leading-tight tracking-tight">Built for<br>Production.</h2>
+                <p class="text-stone-500 text-sm leading-relaxed mb-8 max-w-sm">
+                    I build production-ready AI systems and scalable backends. Rapid prototyping and shipping is my core strength—evidenced by 4 hackathons across 2025-2026, NASA competition, and AWS integrations.
+                </p>
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-4 text-xs text-stone-400 font-mono">
+                        <span class="w-12 h-[1px] bg-stone-700"></span>
+                        <span>AI ENGINEERING</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-xs text-stone-400 font-mono">
+                        <span class="w-12 h-[1px] bg-stone-700"></span>
+                        <span>BACKEND SYSTEMS</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-xs text-stone-400 font-mono">
+                        <span class="w-12 h-[1px] bg-stone-700"></span>
+                        <span>RAPID PROTOTYPING</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scrollable Projects Content -->
+            <div class="lg:w-2/3 bg-[#141414]">
+                
+                <!-- Project 01 -->
+                <div class="group relative min-h-screen flex items-center p-6 md:p-16 border-b border-white/5 hover:bg-[#1a1a1a] transition-colors duration-500">
+                    <div class="w-full">
+                        <div class="flex justify-between items-baseline mb-6">
+                            <h3 class="text-3xl md:text-5xl font-display text-stone-200 group-hover:text-white transition-colors tracking-tight">01. ECHO Browser</h3>
+                            <span class="text-xs font-mono text-stone-600">AWS / 2026</span>
+                        </div>
+                        <div class="relative aspect-[16/10] w-full overflow-hidden bg-stone-900 mb-8 grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-1000" alt="Voice UI">
+                            <div class="reveal-info absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent opacity-0 translate-y-4 transition-all duration-500">
+                                <div class="flex justify-between items-end">
+                                    <p class="text-white text-xs tracking-widest uppercase">Electron • AWS Transcribe • WebMCP</p>
+                                    <p class="text-stone-300 font-mono text-xs text-right">Amazon Nova<br>Hackathon 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-white/10 pt-6">
+                            <p class="text-stone-500 text-sm max-w-md">Voice-first AI browser prioritizing conversation over complex shortcuts. Features real-time audio streaming, AWS Polly/Transcribe, and Amazon Nova Lite driving a dynamic tool-calling architecture.</p>
+                            <div class="flex gap-3">
+                                <a href="https://youtu.be/XMuBBdoag-E?si=bFsTIMDn16H2gVMz" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-orange-500 hover:border-orange-500 transition-all" title="Watch Demo">
+                                    <iconify-icon icon="solar:play-circle-linear" width="16" height="16"></iconify-icon>
+                                </a>
+                                <a href="https://github.com/AnshulRoy28/Aws-Nova-Hackathon-2026" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-all" title="View Code">
+                                    <iconify-icon icon="solar:arrow-right-up-linear" width="16" height="16"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 02: Zorvyn Assessment -->
+                <div class="group relative min-h-screen flex items-center p-6 md:p-16 border-b border-white/5 hover:bg-[#1a1a1a] transition-colors duration-500">
+                    <div class="w-full">
+                        <div class="flex justify-between items-baseline mb-6">
+                            <h3 class="text-3xl md:text-5xl font-display text-stone-200 group-hover:text-white transition-colors tracking-tight">02. Finance Tracker</h3>
+                            <span class="text-xs font-mono text-stone-600">FinTech / 2026</span>
+                        </div>
+                        <div class="relative aspect-[16/10] w-full overflow-hidden bg-stone-900 mb-8 grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-1000" alt="Finance Dashboard">
+                            <div class="reveal-info absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent opacity-0 translate-y-4 transition-all duration-500">
+                                <div class="flex justify-between items-end">
+                                    <p class="text-white text-xs tracking-widest uppercase">Python • Full Stack • FinTech</p>
+                                    <p class="text-stone-300 font-mono text-xs text-right">Internship<br>Screening</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-white/10 pt-6">
+                            <p class="text-stone-500 text-sm max-w-md">Full-stack finance tracking application built as internship screening assessment. Demonstrates financial data management, user authentication, and transaction tracking capabilities.</p>
+                            <div class="flex gap-3">
+                                <a href="https://zorvyn-screening-assestment-anshul-roy.onrender.com" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-blue-500 hover:border-blue-500 transition-all" title="Live Demo">
+                                    <iconify-icon icon="solar:link-linear" width="16" height="16"></iconify-icon>
+                                </a>
+                                <a href="https://github.com/AnshulRoy28/zorvyn-screening-assestment-Anshul-Roy" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-all" title="View Code">
+                                    <iconify-icon icon="solar:arrow-right-up-linear" width="16" height="16"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 03 -->
+                <div class="group relative min-h-screen flex items-center p-6 md:p-16 border-b border-white/5 hover:bg-[#1a1a1a] transition-colors duration-500">
+                    <div class="w-full">
+                        <div class="flex justify-between items-baseline mb-6">
+                            <h3 class="text-3xl md:text-5xl font-display text-stone-200 group-hover:text-white transition-colors tracking-tight">03. NASA HERC '25</h3>
+                            <span class="text-xs font-mono text-stone-600">Rover / 2025</span>
+                        </div>
+                        <div class="relative aspect-[16/10] w-full overflow-hidden bg-stone-900 mb-8 grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                            <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-1000" alt="Space Rover">
+                            <div class="reveal-info absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent opacity-0 translate-y-4 transition-all duration-500">
+                                <div class="flex justify-between items-end">
+                                    <p class="text-white text-xs tracking-widest uppercase">Python • Random Forest • LiDAR</p>
+                                    <p class="text-stone-300 font-mono text-xs">Technical Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-white/10 pt-6">
+                            <p class="text-stone-500 text-sm max-w-md">Real-time fail-safe system preventing autonomous rover collisions using RF on LiDAR point clouds. Led integration for India's only team in the NASA RC Division.</p>
+                            <a href="https://github.com/AnshulRoy28" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-all">
+                                <iconify-icon icon="solar:arrow-right-up-linear" width="16" height="16"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 04 -->
+                <div class="group relative min-h-screen flex items-center p-6 md:p-16 border-b border-white/5 hover:bg-[#1a1a1a] transition-colors duration-500">
+                    <div class="w-full">
+                        <div class="flex justify-between items-baseline mb-6">
+                            <h3 class="text-3xl md:text-5xl font-display text-stone-200 group-hover:text-white transition-colors tracking-tight">04. Nudge AI Health</h3>
+                            <span class="text-xs font-mono text-stone-600">MedTech / 2025</span>
+                        </div>
+                        <div class="relative aspect-[16/10] w-full overflow-hidden bg-stone-900 mb-8 grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-1000" alt="Health Tech">
+                            <div class="reveal-info absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent opacity-0 translate-y-4 transition-all duration-500">
+                                <div class="flex justify-between items-end">
+                                    <p class="text-white text-xs tracking-widest uppercase">Python • AI/ML • Health Tech</p>
+                                    <p class="text-stone-300 font-mono text-xs text-right">🏆 3rd Place Winner<br>Hackathon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-white/10 pt-6">
+                            <p class="text-stone-500 text-sm max-w-md">AI-powered health monitoring and nudging system that provides personalized health recommendations. Collaborative hackathon project demonstrating strong ML integration and teamwork.</p>
+                            <div class="flex gap-3">
+                                <a href="https://nudge-ai-health.vercel.app" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-emerald-500 hover:border-emerald-500 transition-all" title="Live Demo">
+                                    <iconify-icon icon="solar:link-linear" width="16" height="16"></iconify-icon>
+                                </a>
+                                <a href="https://github.com/parthparmar07/nudge-ai-health" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-all" title="View Code">
+                                    <iconify-icon icon="solar:arrow-right-up-linear" width="16" height="16"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 05: GenAI Zurich Hackathon -->
+                <div class="group relative min-h-screen flex items-center p-6 md:p-16 border-b border-white/5 hover:bg-[#1a1a1a] transition-colors duration-500">
+                    <div class="w-full">
+                        <div class="flex justify-between items-baseline mb-6">
+                            <h3 class="text-3xl md:text-5xl font-display text-stone-200 group-hover:text-white transition-colors tracking-tight">05. GenAI Zurich '26</h3>
+                            <span class="text-xs font-mono text-stone-600">Hackathon / 2026</span>
+                        </div>
+                        <div class="relative aspect-[16/10] w-full overflow-hidden bg-stone-900 mb-8 grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-1000" alt="Web App">
+                            <div class="reveal-info absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent opacity-0 translate-y-4 transition-all duration-500">
+                                <div class="flex justify-between items-end">
+                                    <p class="text-white text-xs tracking-widest uppercase">TypeScript • AI • International</p>
+                                    <p class="text-stone-300 font-mono text-xs">GenAI Zurich 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-white/10 pt-6">
+                            <p class="text-stone-500 text-sm max-w-md">AI-powered application built for GenAI Zurich Hackathon 2026. International hackathon participation showcasing TypeScript and AI integration skills on a global stage.</p>
+                            <div class="flex gap-3">
+                                <a href="https://genai-zurich-hackathon-2026.vercel.app" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-purple-500 hover:border-purple-500 transition-all" title="Live Demo">
+                                    <iconify-icon icon="solar:link-linear" width="16" height="16"></iconify-icon>
+                                </a>
+                                <a href="https://github.com/AnshulRoy28/genai-zurich-hackathon-2026" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-all" title="View Code">
+                                    <iconify-icon icon="solar:arrow-right-up-linear" width="16" height="16"></iconify-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 06: JakeyBot -->
+                <div class="group relative min-h-screen flex items-center p-6 md:p-16 border-b border-white/5 hover:bg-[#1a1a1a] transition-colors duration-500">
+                    <div class="w-full">
+                        <div class="flex justify-between items-baseline mb-6">
+                            <h3 class="text-3xl md:text-5xl font-display text-stone-200 group-hover:text-white transition-colors tracking-tight">06. JakeyBot</h3>
+                            <span class="text-xs font-mono text-stone-600">Suite / 2023</span>
+                        </div>
+                        <div class="relative aspect-[16/10] w-full overflow-hidden bg-stone-900 mb-8 grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out">
+                            <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transform scale-110 group-hover:scale-100 transition-transform duration-1000" alt="Code Setup">
+                            <div class="reveal-info absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent opacity-0 translate-y-4 transition-all duration-500">
+                                <div class="flex justify-between items-end">
+                                    <p class="text-white text-xs tracking-widest uppercase">OAuth 2.0 • Tkinter • Multi-threading</p>
+                                    <p class="text-stone-300 font-mono text-xs">Windows .exe App</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end border-t border-white/10 pt-6">
+                            <p class="text-stone-500 text-sm max-w-md">Live streaming automation suite. 24/7 automated chat management with OAuth token persistence and fault-tolerant JSON storage, packaged cleanly via PyInstaller for non-technical users.</p>
+                            <a href="https://github.com/AnshulRoy28" target="_blank" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-all">
+                                <iconify-icon icon="solar:arrow-right-up-linear" width="16" height="16"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Image Break -->
+    <div class="relative h-[60vh] w-full overflow-hidden">
+        <div class="absolute inset-0 bg-black/50 z-10 flex items-center justify-center">
+            <h2 class="text-4xl md:text-6xl font-display text-white tracking-tight text-center px-4">
+                AI that solves <br> <span class="italic font-serif">real-world friction.</span>
+            </h2>
+        </div>
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover fixed-attachment" alt="Abstract Tech">
+    </div>
+
+    <!-- Detailed Content Block (About) -->
+    <section id="about" class="py-24 px-6 md:px-12 bg-[#0f0f0f] border-b border-white/5">
+        <div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32">
+            <div>
+                <span class="text-xs text-stone-500 uppercase tracking-widest mb-6 block">About Me</span>
+                <h3 class="text-3xl font-display text-white leading-tight mb-8 tracking-tight">
+                    Operating at the intersection of AI engineering and scalable backend systems.
+                </h3>
+            </div>
+            <div class="space-y-8">
+                <p class="text-stone-400 text-sm leading-7">
+                    I sit at the intersection of AI and systems engineering. I don't just build ML models - I ship production systems that solve real problems. From NASA competitions to AWS hackathons, I focus on AI that creates tangible operational value.
+                </p>
+                <div class="text-stone-400 text-sm leading-7 space-y-2">
+                    <p class="text-white mb-2 font-medium">Core Strengths:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Rapid prototyping and shipping (4 hackathons across 2025-2026).</li>
+                        <li>Full-stack AI systems from model training to production deployment.</li>
+                        <li>Production-grade AWS integrations and NASA competition experience.</li>
+                        <li>Cross-domain experience across aerospace, health tech, and accessibility.</li>
+                    </ul>
+                </div>
+                <div class="flex gap-12 border-t border-white/10 pt-8 mt-8">
+                    <div>
+                        <span class="block text-3xl font-display text-white mb-1 tracking-tight">4</span>
+                        <span class="text-xs text-stone-600 uppercase tracking-widest">Hackathons</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-display text-white mb-1 tracking-tight">465+</span>
+                        <span class="text-xs text-stone-600 uppercase tracking-widest">Yearly Commits</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-display text-white mb-1 tracking-tight">1</span>
+                        <span class="text-xs text-stone-600 uppercase tracking-widest">NASA Event</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORIZONTAL SCROLL: EXPERIENCE -->
+    <section id="experience" class="py-24 bg-[#0f0f0f] border-b border-white/5">
+        <div class="px-6 md:px-12 mb-12 flex justify-between items-end">
+            <div>
+                <span class="text-xs text-orange-500 uppercase tracking-widest mb-2 block">Professional Impact</span>
+                <h2 class="text-3xl md:text-4xl font-display text-white tracking-tight">Smartan FitTech</h2>
+            </div>
+            <div class="hidden md:flex gap-4">
+                <span class="text-xs text-stone-500 uppercase tracking-widest self-center">Scroll</span>
+                <iconify-icon icon="solar:arrow-right-linear" class="w-5 h-5 text-stone-500 animate-pulse" width="20" height="20"></iconify-icon>
+            </div>
+        </div>
+
+        <div class="flex overflow-x-auto snap-x snap-mandatory gap-2 px-6 md:px-12 pb-8 hide-scrollbar">
+            <!-- Experience Bullet 1 -->
+            <div class="min-w-[80vw] md:min-w-[45vw] snap-center group relative aspect-[16/9] overflow-hidden bg-stone-900 border border-white/5">
+                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-40 group-hover:opacity-30" alt="Code Setup">
+                <div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                    <span class="text-orange-500 text-xs font-mono mb-4">01 // AI Engineering Intern</span>
+                    <h4 class="text-2xl md:text-3xl font-display text-white mb-4 tracking-tight">Pose Correction Pipeline</h4>
+                    <p class="text-stone-400 text-sm md:text-base max-w-lg leading-relaxed">Built an end-to-end pose correction pipeline linking real-time video input to a rule-based evaluation engine for exercise accuracy.</p>
+                </div>
+            </div>
+            <!-- Experience Bullet 2 -->
+            <div class="min-w-[80vw] md:min-w-[45vw] snap-center group relative aspect-[16/9] overflow-hidden bg-stone-900 border border-white/5">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-40 group-hover:opacity-30" alt="Data Structure">
+                <div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                    <span class="text-orange-500 text-xs font-mono mb-4">02 // Tooling & Automation</span>
+                    <h4 class="text-2xl md:text-3xl font-display text-white mb-4 tracking-tight">Internal Annotation Tool</h4>
+                    <p class="text-stone-400 text-sm md:text-base max-w-lg leading-relaxed">Replaced external tools like Roboflow with a custom-built internal data annotation tool, significantly reducing manual labeling time.</p>
+                </div>
+            </div>
+             <!-- Experience Bullet 3 -->
+             <div class="min-w-[80vw] md:min-w-[45vw] snap-center group relative aspect-[16/9] overflow-hidden bg-stone-900 border border-white/5">
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-40 group-hover:opacity-30" alt="AI Neural Net">
+                <div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                    <span class="text-orange-500 text-xs font-mono mb-4">03 // Computer Vision</span>
+                    <h4 class="text-2xl md:text-3xl font-display text-white mb-4 tracking-tight">YOLOv11 Fine-Tuning</h4>
+                    <p class="text-stone-400 text-sm md:text-base max-w-lg leading-relaxed">Fine-tuned YOLOv11 Pose Estimation models on custom datasets specifically tailored for accurate, exercise-specific keypoint detection.</p>
+                </div>
+            </div>
+             <!-- Experience Bullet 4 -->
+             <div class="min-w-[80vw] md:min-w-[45vw] snap-center group relative aspect-[16/9] overflow-hidden bg-stone-900 border border-white/5">
+                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-40 group-hover:opacity-30" alt="Git Hub">
+                <div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                    <span class="text-orange-500 text-xs font-mono mb-4">04 // Core Engine</span>
+                    <h4 class="text-2xl md:text-3xl font-display text-white mb-4 tracking-tight">Agile Workflow Integration</h4>
+                    <p class="text-stone-400 text-sm md:text-base max-w-lg leading-relaxed">Worked within Agile sprints, actively managing Git merge requests to refine and deploy the core exercise classification engine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Horizontal Scroll Section: SKILLS -->
+    <section id="skills" class="py-24 border-b border-white/5 bg-[#0f0f0f] overflow-hidden">
+        <div class="px-6 md:px-12 mb-12 flex justify-between items-end">
+            <div>
+                <span class="text-xs text-orange-500 uppercase tracking-widest mb-2 block">Technical Arsenal</span>
+                <h2 class="text-3xl md:text-4xl font-display text-white tracking-tight">Skills &amp; Technologies</h2>
+            </div>
+            <div class="hidden md:flex gap-2">
+                <button class="w-12 h-12 border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors text-stone-400">
+                    <iconify-icon icon="solar:arrow-left-linear" width="20" height="20"></iconify-icon>
+                </button>
+                <button class="w-12 h-12 border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors text-stone-400">
+                    <iconify-icon icon="solar:arrow-right-linear" width="20" height="20"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- Snap Scroll Container -->
+        <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 md:px-12 pb-12 hide-scrollbar">
+            <!-- Card 1: Languages -->
+            <div class="min-w-[85vw] md:min-w-[400px] snap-center bg-stone-900/30 border border-white/5 p-8 flex flex-col justify-between group hover:border-white/20 transition-all cursor-pointer">
+                <div class="mb-12">
+                    <div class="w-10 h-10 bg-orange-900/20 text-orange-500 rounded flex items-center justify-center mb-6">
+                        <iconify-icon icon="solar:code-linear" width="20" height="20"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-display text-white mb-3 tracking-tight">Languages</h3>
+                    <p class="text-stone-500 text-sm font-light leading-relaxed">
+                        Core programming languages utilized for full-stack logic, data manipulation, and structuring interfaces.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 text-xs font-mono text-stone-400 border-t border-white/5 pt-4">
+                    <span>Python</span> • <span>TypeScript</span> • <span>JavaScript</span> • <span>SQL</span> • <span>HTML/CSS</span> • <span>PowerShell</span>
+                </div>
+            </div>
+
+            <!-- Card 2: Backend & Cloud -->
+            <div class="min-w-[85vw] md:min-w-[400px] snap-center bg-stone-900/30 border border-white/5 p-8 flex flex-col justify-between group hover:border-white/20 transition-all cursor-pointer">
+                <div class="mb-12">
+                    <div class="w-10 h-10 bg-blue-900/20 text-blue-500 rounded flex items-center justify-center mb-6">
+                        <iconify-icon icon="solar:server-linear" width="20" height="20"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-display text-white mb-3 tracking-tight">Backend &amp; Cloud</h3>
+                    <p class="text-stone-500 text-sm font-light leading-relaxed">
+                        Building scalable architectures, AWS integrations, and real-time WebSocket relational databases.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 text-[10px] font-mono text-stone-400 border-t border-white/5 pt-4 uppercase">
+                    <span>AWS (Nova/Polly)</span> • <span>FastAPI</span> • <span>Node.js</span> • <span>Docker</span> • <span>PostgreSQL</span> • <span>Supabase</span>
+                </div>
+            </div>
+
+            <!-- Card 3: AI & ML -->
+            <div class="min-w-[85vw] md:min-w-[400px] snap-center bg-stone-900/30 border border-white/5 p-8 flex flex-col justify-between group hover:border-white/20 transition-all cursor-pointer">
+                <div class="mb-12">
+                    <div class="w-10 h-10 bg-emerald-900/20 text-emerald-500 rounded flex items-center justify-center mb-6">
+                        <iconify-icon icon="solar:cpu-linear" width="20" height="20"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-display text-white mb-3 tracking-tight">AI &amp; ML</h3>
+                    <p class="text-stone-500 text-sm font-light leading-relaxed">
+                        Implementing state-of-the-art vision models, orchestrating LLMs, and leveraging deep learning frameworks.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 text-[10px] font-mono text-stone-400 border-t border-white/5 pt-4 uppercase">
+                    <span>Amazon Nova</span> • <span>YOLOv11</span> • <span>PyTorch</span> • <span>Hugging Face</span> • <span>MediaPipe</span> • <span>Random Forest</span>
+                </div>
+            </div>
+
+            <!-- Card 4: Frontend & Desktop -->
+            <div class="min-w-[85vw] md:min-w-[400px] snap-center bg-stone-900/30 border border-white/5 p-8 flex flex-col justify-between group hover:border-white/20 transition-all cursor-pointer">
+                <div class="mb-12">
+                    <div class="w-10 h-10 bg-pink-900/20 text-pink-500 rounded flex items-center justify-center mb-6">
+                        <iconify-icon icon="solar:monitor-smartphone-linear" width="20" height="20"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-display text-white mb-3 tracking-tight">Frontend &amp; Desktop</h3>
+                    <p class="text-stone-500 text-sm font-light leading-relaxed">
+                        Creating robust desktop applications, modern interfaces, and cross-platform tooling natively.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 text-[10px] font-mono text-stone-400 border-t border-white/5 pt-4 uppercase">
+                    <span>Electron</span> • <span>Tkinter</span> • <span>HTML5</span> • <span>CSS3</span> • <span>JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Card 5: Tools & Infra -->
+            <div class="min-w-[85vw] md:min-w-[400px] snap-center bg-stone-900/30 border border-white/5 p-8 flex flex-col justify-between group hover:border-white/20 transition-all cursor-pointer">
+                <div class="mb-12">
+                    <div class="w-10 h-10 bg-purple-900/20 text-purple-500 rounded flex items-center justify-center mb-6">
+                        <iconify-icon icon="solar:wrench-linear" width="20" height="20"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-display text-white mb-3 tracking-tight">Tools &amp; Infra</h3>
+                    <p class="text-stone-500 text-sm font-light leading-relaxed">
+                        The operational toolkit for version control, hardware integration, and cross-platform packaging.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 text-[10px] font-mono text-stone-400 border-t border-white/5 pt-4 uppercase">
+                    <span>Git/GitHub</span> • <span>Linux</span> • <span>PyInstaller</span> • <span>Postman</span> • <span>OAuth 2.0</span>
+                </div>
+            </div>
+
+            <!-- Card 6: Specialized -->
+            <div class="min-w-[85vw] md:min-w-[400px] snap-center bg-stone-900/30 border border-white/5 p-8 flex flex-col justify-between group hover:border-white/20 transition-all cursor-pointer">
+                <div class="mb-12">
+                    <div class="w-10 h-10 bg-cyan-900/20 text-cyan-500 rounded flex items-center justify-center mb-6">
+                        <iconify-icon icon="solar:target-linear" width="20" height="20"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-display text-white mb-3 tracking-tight">Specialized</h3>
+                    <p class="text-stone-500 text-sm font-light leading-relaxed">
+                        Niche technical implementations bridging hardware, specific protocols, and advanced accessibility standards.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 text-[10px] font-mono text-stone-400 border-t border-white/5 pt-4 uppercase">
+                    <span>WebMCP Protocol</span> • <span>LiDAR</span> • <span>Speech Recognition</span> • <span>Computer Vision</span> • <span>ARIA</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bento Grid Stats Section -->
+    <section class="py-24 bg-[#0f0f0f] px-6 md:px-12">
+        <div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <!-- Large Focus Block -->
+            <div class="col-span-1 md:col-span-2 row-span-2 relative bg-stone-900 rounded-lg overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" alt="Space Element">
+                <div class="relative z-10 p-8 h-full flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent">
+                    <span class="text-orange-500 text-xs font-mono uppercase tracking-widest mb-2">Global Stage</span>
+                    <h3 class="text-3xl font-display text-white mb-2 tracking-tight">NASA HERC 2025</h3>
+                    <p class="text-stone-300 text-sm font-light">Technical Lead, Team Mushak. Led technical integration for India's only team in the NASA HERC RC Division.</p>
+                </div>
+            </div>
+
+            <!-- Stat Block 1 -->
+            <div class="bg-stone-900/40 border border-white/5 p-8 rounded-lg flex flex-col justify-center items-center text-center hover:bg-stone-900/60 transition-colors">
+                <span class="text-4xl md:text-5xl text-white font-light font-display mb-2 tracking-tight">465+</span>
+                <span class="text-xs uppercase tracking-widest text-stone-500">GitHub Commits (Last Year)</span>
+            </div>
+
+            <!-- Stat Block 2 -->
+            <div class="bg-stone-900/40 border border-white/5 p-8 rounded-lg flex flex-col justify-center items-center text-center hover:bg-stone-900/60 transition-colors">
+                <span class="text-4xl md:text-5xl text-white font-light font-display mb-2 text-center tracking-tight">4</span>
+                <span class="text-xs uppercase tracking-widest text-stone-500 mt-2">Hackathons ('25-'26)</span>
+            </div>
+
+            <!-- Wide Text Block -->
+            <div class="col-span-1 md:col-span-2 bg-[#1a1a1a] border border-white/5 p-8 rounded-lg flex items-center justify-between group cursor-pointer hover:border-white/20 transition-all">
+                <div>
+                    <span class="text-xs text-orange-500 uppercase tracking-widest mb-2 block">Amazon Nova Hackathon 2026</span>
+                    <h4 class="text-lg text-white font-light">ECHO Browser - Production-grade AWS integration with voice AI</h4>
+                </div>
+                <div class="w-8 h-8 rounded-full border border-white/20 text-white flex items-center justify-center opacity-100 group-hover:bg-white group-hover:text-black transition-all">
+                    <iconify-icon icon="solar:arrow-right-up-linear" width="16" height="16"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a0a0a] pt-32 pb-12 border-t border-white/10">
+        <div class="px-6 md:px-12 max-w-screen-2xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+                <div>
+                    <h2 class="text-6xl md:text-8xl font-display text-stone-100 tracking-tight mb-8 leading-[0.8]">
+                        Ship <br> <span class="text-stone-700">Systems.</span>
+                    </h2>
+                </div>
+                <div class="flex flex-col justify-end items-start lg:items-end">
+                    <a href="https://linkedin.com/in/roy-anshul" target="_blank" class="group flex items-center gap-4 text-2xl md:text-3xl text-white font-light mb-2">
+                        Get in Touch
+                        <span class="group-hover:translate-x-2 transition-transform duration-300">→</span>
+                    </a>
+                    <p class="text-stone-500 text-sm font-mono mt-2">royanshul5002@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-12">
+                <div class="flex flex-col gap-4">
+                    <span class="text-xs text-stone-500 uppercase tracking-widest">Navigation</span>
+                    <a href="#" class="text-sm text-stone-300 hover:text-white transition-colors">Home</a>
+                    <a href="#projects" class="text-sm text-stone-300 hover:text-white transition-colors">Projects</a>
+                    <a href="#about" class="text-sm text-stone-300 hover:text-white transition-colors">About</a>
+                    <a href="#skills" class="text-sm text-stone-300 hover:text-white transition-colors">Skills</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <span class="text-xs text-stone-500 uppercase tracking-widest">Connect</span>
+                    <a href="https://linkedin.com/in/roy-anshul" target="_blank" class="text-sm text-stone-300 hover:text-white transition-colors">LinkedIn</a>
+                    <a href="https://github.com/AnshulRoy28" target="_blank" class="text-sm text-stone-300 hover:text-white transition-colors">GitHub</a>
+                    <a href="mailto:royanshul5002@gmail.com" class="text-sm text-stone-300 hover:text-white transition-colors">Email</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <span class="text-xs text-stone-500 uppercase tracking-widest">Status</span>
+                    <span class="text-sm text-stone-300">Open to Internships</span>
+                    <span class="text-sm text-stone-300">Open to Full-Time</span>
+                </div>
+                <div class="flex flex-col gap-4 justify-end lg:items-end">
+                    <span class="text-xs text-stone-600 uppercase tracking-widest">© 2026 Anshul Roy</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Horizontal scroll functionality for Experience and Skills sections
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeHorizontalScroll();
+        });
+
+        function initializeHorizontalScroll() {
+            // Experience section
+            const expContainer = document.querySelector('#experience .hide-scrollbar');
+            if (expContainer) {
+                setupSmoothHorizontalScroll(expContainer);
+            }
+
+            // Skills section
+            const skillsContainer = document.querySelector('#skills .hide-scrollbar');
+            if (skillsContainer) {
+                setupSmoothHorizontalScroll(skillsContainer);
+            }
+        }
+
+        function setupSmoothHorizontalScroll(container) {
+            let isHovering = false;
+
+            // Track when mouse enters/leaves the container
+            container.addEventListener('mouseenter', () => {
+                isHovering = true;
+                container.style.cursor = 'grab';
+            });
+
+            container.addEventListener('mouseleave', () => {
+                isHovering = false;
+                container.style.cursor = 'default';
+            });
+
+            // Smooth horizontal scroll on mouse wheel when hovering
+            container.addEventListener('wheel', (e) => {
+                if (isHovering) {
+                    e.preventDefault();
+                    
+                    // Smooth scroll with animation
+                    const scrollAmount = e.deltaY * 2; // Multiply for faster scroll
+                    container.scrollBy({
+                        left: scrollAmount,
+                        behavior: 'smooth'
+                    });
+                }
+            }, { passive: false });
+
+            // Drag to scroll functionality
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            container.addEventListener('mousedown', (e) => {
+                isDown = true;
+                container.style.cursor = 'grabbing';
+                startX = e.pageX - container.offsetLeft;
+                scrollLeft = container.scrollLeft;
+                container.style.scrollBehavior = 'auto'; // Disable smooth for dragging
+            });
+
+            container.addEventListener('mouseleave', () => {
+                isDown = false;
+                if (isHovering) {
+                    container.style.cursor = 'grab';
+                }
+            });
+
+            container.addEventListener('mouseup', () => {
+                isDown = false;
+                container.style.cursor = 'grab';
+                container.style.scrollBehavior = 'smooth'; // Re-enable smooth
+            });
+
+            container.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - container.offsetLeft;
+                const walk = (x - startX) * 2;
+                container.scrollLeft = scrollLeft - walk;
+            });
+        }
+    </script>
+
+</body></html>

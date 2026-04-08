@@ -1,0 +1,294 @@
+{
+  "meta": {
+    "purpose": "Portfolio guideline for Anshul Roy - Full Stack Developer & AI Engineer",
+    "last_updated": "2026-04-07",
+    "notes": [
+      "Removed PlacementOS (placement deal fell through)",
+      "Leading with ECHO Browser (Amazon Nova Hackathon 2026)",
+      "Added Nudge AI Health (3rd place hackathon win)",
+      "Added Zorvyn screening assessment",
+      "Prioritized hackathon projects and real competition experience"
+    ]
+  },
+
+  "personal": {
+    "name": "Anshul Roy",
+    "title": "Full Stack Developer & AI Engineer",
+    "tagline": "Building AI systems that solve real operational friction",
+    "email": "royanshul5002@gmail.com",
+    "linkedin": "https://linkedin.com/in/roy-anshul",
+    "github": "https://github.com/AnshulRoy28",
+    "location": "Mumbai, India",
+    "education": "Pre-final year CS (AI & ML) @ Atlas Skilltech University, Mumbai",
+    "currently_building": "AI-powered interview assistant using speech recognition and LLMs to simulate real interview scenarios",
+    "currently_learning": ["RAG systems", "ML model optimization for local GPU inference", "Kubernetes"]
+  },
+
+  "about": {
+    "summary": "I sit at the intersection of AI and systems engineering. I don't just build ML models - I ship production systems that solve real problems. From university ERP integrations to NASA competitions to AWS hackathons, I focus on AI that creates tangible operational value.",
+    "key_strengths": [
+      "Rapid prototyping and shipping - 4 hackathons across 2025-2026",
+      "Full-stack AI systems - from model training to production deployment",
+      "Production-grade AWS integrations and NASA competition experience",
+      "Cross-domain experience - aerospace, health tech, fintech, accessibility"
+    ]
+  },
+
+  "featured_projects": [
+    {
+      "id": "echo-browser",
+      "title": "ECHO — Voice-First AI Browser",
+      "type": "Hackathon Project (Amazon Nova Hackathon 2026)",
+      "role": "Solo Developer",
+      "stack": ["Electron", "Amazon Nova Lite", "AWS Transcribe", "AWS Polly", "WebMCP", "Python", "WebSockets", "Node.js"],
+      "problem": "Traditional screen readers require memorizing complex shortcuts. Web accessibility is still keyboard-centric, not conversation-centric.",
+      "solution": [
+        "Built Electron browser with natural voice control (Ctrl+Space to speak)",
+        "Integrated AWS Transcribe for real-time speech-to-text streaming",
+        "Used Amazon Nova Lite AI agent for natural language intent understanding",
+        "AWS Polly (Ruth voice) for natural speech output",
+        "WebMCP protocol for websites to register voice-callable tools"
+      ],
+      "demo_apps": [
+        "Chat App: WhatsApp-style messaging controlled entirely by voice",
+        "Todo List: Voice-controlled task management",
+        "E-commerce: Browse and shop using natural language"
+      ],
+      "technical_highlights": [
+        "Real-time audio streaming via Python WebSocket server",
+        "Tool-calling architecture - AI decides which website functions to invoke",
+        "Full ARIA support and keyboard navigation for accessibility-first design",
+        "Electron 41.0.0-beta.6 with WebMCP support"
+      ],
+      "impact": "Makes web truly accessible through natural conversation instead of complex shortcuts",
+      "github": "https://github.com/AnshulRoy28/Aws-Nova-Hackathon-2026",
+      "demo_video": "https://youtu.be/XMuBBdoag-E?si=bFsTIMDn16H2gVMz",
+      "featured": true,
+      "priority": 1,
+      "show": ["GitHub repo with comprehensive README", "Architecture diagram", "Demo video if available", "Mention Amazon Nova Hackathon 2026 explicitly"],
+      "lead_with_this": "Most comprehensive project with production-grade AWS integration"
+    },
+    {
+      "id": "nasa-herc-rover",
+      "title": "NASA HERC 2025 — Rover Collision Safety System",
+      "type": "Competition (NASA Human Exploration Rover Challenge)",
+      "role": "Technical Lead, Team Mushak (India's only team in RC Division)",
+      "stack": ["Python", "Random Forest", "LiDAR", "WebSockets", "Raspberry Pi 4"],
+      "highlight": "Led technical integration for India's only team in the NASA HERC RC Division",
+      "solution": [
+        "Real-time fail-safe system using Random Forest on LiDAR point cloud data",
+        "Low-latency WebSocket telemetry from PS4 controller to onboard Raspberry Pi 4",
+        "Bridged hardware sensor data with software control logic",
+        "Collision detection and autonomous braking system"
+      ],
+      "impact": "Represented India as the only team in RC Division at NASA's premier rover competition",
+      "featured": true,
+      "priority": 2,
+      "show": ["Competition photos/videos if available", "GitHub repo if exists", "Use NASA name prominently"]
+    },
+    {
+      "id": "nudge-ai-health",
+      "title": "Nudge AI Health",
+      "achievement": "🏆 3rd Place Winner",
+      "type": "Hackathon Project",
+      "role": "Co-developer (with junior teammate)",
+      "description": "AI-powered health monitoring and nudging system that provides personalized health recommendations",
+      "technologies": ["AI/ML", "Health Tech", "Python"],
+      "github": "https://github.com/parthparmar07/nudge-ai-health",
+      "live_url": "https://nudge-ai-health.vercel.app",
+      "highlights": [
+        "Won 3rd place in hackathon competition - first hackathon win",
+        "Collaborative project demonstrating mentorship and teamwork",
+        "Implemented AI-driven health recommendations and monitoring"
+      ],
+      "featured": true,
+      "priority": 3
+    },
+    {
+      "id": "jakeybot",
+      "title": "JakeyBot — Live Streaming Automation Suite",
+      "type": "Personal Project",
+      "role": "Solo Developer",
+      "stack": ["Python", "OAuth 2.0", "Tkinter", "PyInstaller", "JSON", "YouTube API"],
+      "problem": "YouTube Live creator needed 24/7 automated chat management without technical overhead",
+      "solution": [
+        "OAuth 2.0 token persistence and auto-refresh for 24/7 uptime",
+        "Multi-threaded Tkinter GUI preventing UI freezes on high-volume chat data",
+        "Fault-tolerant JSON storage with atomic writes for viewer loyalty points",
+        "Packaged into single Windows .exe via PyInstaller for non-technical distribution"
+      ],
+      "impact": "Production use by live streamer - shows product thinking beyond just code",
+      "technical_highlights": [
+        "Handles concurrent chat operations without blocking UI",
+        "Robust error handling for network failures and API rate limits",
+        "Zero-config deployment via standalone executable"
+      ],
+      "featured": true,
+      "priority": 4,
+      "show": ["GitHub repo", "App screenshot", "Highlight .exe distribution - shows product thinking"]
+    },
+    {
+      "id": "zorvyn-assessment",
+      "title": "Finance Tracker (Zorvyn Assessment)",
+      "type": "Take-home Assignment (Internship Screening)",
+      "role": "Solo Developer",
+      "description": "Full-stack finance tracking application demonstrating financial data management capabilities",
+      "technologies": ["Python", "Full Stack Development", "FinTech"],
+      "github": "https://github.com/AnshulRoy28/zorvyn-screening-assestment-Anshul-Roy",
+      "live_url": "https://zorvyn-screening-assestment-anshul-roy.onrender.com",
+      "highlights": [
+        "Completed as part of internship screening process",
+        "Showcases financial data management and user authentication",
+        "Recent work (April 2026) - 11 commits"
+      ],
+      "featured": true,
+      "priority": 2
+    },
+  ],
+
+  "additional_hackathons": [
+    {
+      "title": "GenAI Zurich Hackathon 2026",
+      "repo": "https://github.com/AnshulRoy28/genai-zurich-hackathon-2026",
+      "live_url": "https://genai-zurich-hackathon-2026.vercel.app",
+      "stack": ["TypeScript", "AI"],
+      "description": "AI-powered application for international hackathon",
+      "note": "International hackathon participation - strong signal of global engagement",
+      "featured": true,
+      "priority": 5
+    },
+    {
+      "title": "Aideas 2026 (Miro Hackathon)",
+      "repo": "https://github.com/AnshulRoy28/Aideas-2026-Miro",
+      "stack": ["HTML"],
+      "note": "Shows breadth of hackathon participation"
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "Smartan FitTech",
+      "role": "AI Engineering Intern",
+      "duration": "May 2025 – Jul 2025",
+      "location": "Remote, Chennai",
+      "type": "Internship",
+      "responsibilities": [
+        "Built end-to-end pose correction pipeline linking real-time video input to rule-based evaluation engine",
+        "Replaced Roboflow with custom internal data annotation tool, cutting manual labeling time",
+        "Fine-tuned YOLOv11 Pose Estimation on custom datasets for exercise-specific keypoint detection",
+        "Worked in Agile with Git, managing merge requests on core exercise classification engine"
+      ],
+      "stack": ["YOLOv11", "MediaPipe", "Python", "Git", "Computer Vision", "Pose Estimation"]
+    }
+  ],
+
+  "skills": {
+    "display_style": "Grouped tags - not a flat list",
+    "groups": {
+      "Languages": ["Python", "TypeScript", "JavaScript", "SQL", "HTML/CSS", "PowerShell"],
+      "Backend & Cloud": [
+        "FastAPI", "Express.js", "Node.js", "Flask",
+        "Docker", "Nginx",
+        "AWS (Transcribe, Polly, Nova)", "Google Cloud", "Netlify", "Vercel",
+        "Supabase", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase",
+        "REST APIs", "WebSockets", "GitHub Actions"
+      ],
+      "AI & ML": [
+        "Amazon Nova Lite", "Gemini Pro", "LLMs",
+        "YOLOv11", "MediaPipe", "PyTorch", "TensorFlow", "Keras",
+        "Hugging Face", "scikit-learn", "Random Forest",
+        "CUDA", "NumPy", "Pandas", "Matplotlib", "Plotly", "SciPy"
+      ],
+      "Frontend & Desktop": [
+        "Electron", "Tkinter", "HTML5", "CSS3", "JavaScript"
+      ],
+      "Tools & Infrastructure": [
+        "Git/GitHub", "Linux", "Windows Terminal",
+        "Postman", "Jupyter Notebook", "PyInstaller",
+        "Power BI", "OAuth 2.0", "JWT"
+      ],
+      "Specialized": [
+        "WebMCP Protocol", "LiDAR Processing", "Computer Vision",
+        "Speech Recognition", "Text-to-Speech", "Accessibility (ARIA)"
+      ]
+    }
+  },
+
+  "achievements": [
+    {
+      "title": "NASA HERC 2025 - India's Only RC Division Team",
+      "description": "Technical Lead for Team Mushak, representing India as the only team in the RC Division",
+      "impact": "Led rover collision safety system development for NASA's premier student competition"
+    },
+    {
+      "title": "Amazon Nova Hackathon 2026",
+      "description": "Built ECHO - voice-first AI browser using Amazon Nova Lite, AWS Transcribe, and AWS Polly",
+      "impact": "Demonstrated production-grade AWS integration and accessibility-first design"
+    },
+    {
+      "title": "Hackathon 3rd Place - Nudge AI Health",
+      "description": "First hackathon win - secured 3rd place with AI health monitoring solution",
+      "impact": "Collaborative project showcasing AI/ML and teamwork skills"
+    },
+    {
+      "title": "International Hackathon Participation",
+      "description": "GenAI Zurich Hackathon 2026 - competed in international AI hackathon",
+      "impact": "Shows global engagement and willingness to compete internationally"
+    }
+  ],
+
+  "credibility_signals": {
+    "must_call_out_prominently": [
+      "Amazon Nova Hackathon 2026 (ECHO) - production-grade AWS integration, lead with this",
+      "NASA HERC 2025 - India's only team in RC Division",
+      "Nudge AI Health - 3rd place hackathon winner",
+      "GenAI Zurich Hackathon 2026 - international participation",
+      "4 major hackathons across 2025-2026 shows consistent shipping velocity",
+      "465 GitHub contributions in last year - shows consistent coding activity"
+    ]
+  },
+
+  "github_optimization": {
+    "pinned_repos_priority": [
+      "Aws-Nova-Hackathon-2026 (highest priority - excellent README, AWS brand)",
+      "genai-zurich-hackathon-2026 (international hackathon)",
+      "nudge-ai-health (3rd place winner)",
+      "Aideas-2026-Miro (hackathon breadth)",
+      "zorvyn-screening-assestment-Anshul-Roy (recent work)",
+      "Project_Forge (needs description added)"
+    ],
+    "repos_to_improve": [
+      "Project_Forge - add description and topics (currently has none)",
+      "Add website/portfolio URL to GitHub profile once live"
+    ],
+    "repos_to_deprioritize": [
+      "Complete-Python - tutorial/learning repo, doesn't showcase original work",
+      "Kubernetes-Experimentation - learning repo, don't feature prominently"
+    ]
+  },
+
+  "portfolio_presentation_strategy": {
+    "hero_section": "Lead with ECHO Browser (Amazon Nova Hackathon 2026) - most comprehensive project with production-grade AWS integration",
+    "project_order": [
+      "ECHO Browser (AWS hackathon with comprehensive tech stack)",
+      "Finance Tracker / Zorvyn Assessment (internship screening - fintech)",
+      "NASA HERC (competition prestige - India's only team)",
+      "Nudge AI Health (3rd place hackathon win)",
+      "GenAI Zurich Hackathon (international participation)",
+      "JakeyBot (product thinking - packaged as .exe)",
+      "Brief mentions of other hackathons (Miro)"
+    ],
+    "avoid": [
+      "Don't bury ECHO - it's well-documented with real AWS integrations",
+      "Don't skip Zurich and Miro hackathons - 3 hackathons in ~6 months is impressive",
+      "Don't feature Complete-Python or Kubernetes-Experimentation as portfolio projects",
+      "Don't use generic phrases like 'passionate about technology' or 'love solving problems'"
+    ],
+    "emphasize": [
+      "You ship complete systems with production-grade integrations (AWS, NASA competition)",
+      "Intersection of AI and systems engineering",
+      "Hackathon success and competition experience (3rd place, NASA, international)",
+      "Consistent velocity - 4 hackathons and competitions across 2025-2026"
+    ]
+  }
+}
